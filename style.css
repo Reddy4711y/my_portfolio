@@ -376,3 +376,61 @@ a:hover {
   transform: scale(1.1);
   background-color: #ff6f61;
 }
+
+/* Media queries for responsiveness */
+
+/* Tablets and smaller devices */
+@media screen and (max-width: 1024px) {
+  /* Adjust header styles */
+  header {
+    padding: 10px;
+  }
+  
+  /* Adjust font sizes */
+  h1, h2, h3 {
+    font-size: 20px;
+  }
+  
+  /* Adjust padding and margins */
+  .project {
+    margin: 0 5px 10px;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 768px) {
+  /* Adjust header styles */
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  /* Adjust font sizes */
+  h1 {
+    font-size: 24px;
+  }
+  
+  /* Adjust padding and margins */
+  .project {
+    flex-basis: 100%;
+    margin: 0 0 10px;
+    padding: 10px;
+  }
+  
+  /* Adjust skills container */
+  .skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  /* Adjust about photo */
+  .about-photo {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  /* Adjust video container */
+  .video-container {
+    padding-top: 100%; /* Adjust aspect ratio for mobile */
+  }
+}
